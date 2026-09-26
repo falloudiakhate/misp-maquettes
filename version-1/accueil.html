@@ -399,9 +399,10 @@ body.assistant-ouvert .fab{display:none}
 /* thèmes sur mobile : deux visibles, le reste dans une feuille de sélection */
 .themes ul{overflow:visible!important;flex-wrap:wrap;margin:0!important;padding:0!important}
 .themes ul li:nth-child(n+3):not(.th-plus){display:none}
-.themes{position:relative}
-.th-plus{position:absolute;right:0;top:-10px}
-.th-plus button{width:36px;height:36px;padding:0;display:flex;align-items:center;justify-content:center;border:0;border-radius:24px;background:var(--ink);color:#fff;cursor:pointer;box-shadow:0 4px 12px rgba(28,7,164,.25)}
+.themes ul{flex-wrap:nowrap!important}
+.themes a{height:44px!important;padding:0 14px!important}
+.themes a .th-ic{display:none}
+.th-plus button{width:44px;height:44px;padding:0;display:flex;align-items:center;justify-content:center;border:0;border-radius:24px;background:var(--ink);color:#fff;cursor:pointer;box-shadow:0 4px 12px rgba(28,7,164,.25)}
 .themes ul{flex-wrap:wrap!important;gap:8px!important}
 .carte-recherche>*{min-width:0}
 .themes a{padding:0 12px 0 6px!important;font-size:14px!important}
@@ -416,7 +417,7 @@ body.assistant-ouvert .fab{display:none}
 .f-liste li+li{border-top:1px solid #EDF0F4}
 .f-liste a{min-height:60px;display:flex;align-items:center;gap:14px;font-size:16px;font-weight:500;color:var(--txt);text-decoration:none}
 @media (prefers-reduced-motion:reduce){.feuille[open]{animation:none}}
-@media (min-width:1024px){.themes ul{flex-wrap:wrap!important}.themes ul li:nth-child(n+3):not(.th-plus){display:block}.th-plus{display:none}}
+@media (min-width:1024px){.themes ul{flex-wrap:wrap!important}.themes a .th-ic{display:flex}.themes a{padding:0 14px 0 6px!important;height:40px!important}.themes ul li:nth-child(n+3):not(.th-plus){display:block}.th-plus{display:none}}
 </style>
 </head>
 <body class="v1">
