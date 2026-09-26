@@ -487,6 +487,10 @@ function ouvrirMenu(force){var e=document.getElementById('entete'),b=e.querySele
 function basculerAssistant(force){var o=force===true?true:!document.body.classList.contains('assistant-ouvert');var f=document.querySelector('#panneau-assistant iframe');if(o&&!f.src)f.src=f.dataset.src;document.body.classList.toggle('assistant-ouvert',o);document.querySelector('.fab').setAttribute('aria-expanded',o);}
 window.addEventListener('message',function(e){if(e.data==='fermer-assistant')basculerAssistant(false);});
 (function(){var m=document.getElementById('mosaique');if(!m)return;var p=document.querySelectorAll('.points span');m.addEventListener('scroll',function(){var i=Math.round(m.scrollLeft/(m.children[0].offsetWidth+12));p.forEach(function(e,k){e.classList.toggle('on',k===i)});},{passive:true});})();
+(function(){var f=document.getElementById('video-hero');if(!f)return;
+function ecouter(){try{f.contentWindow.postMessage(JSON.stringify({event:'listening',id:1}),'*');}catch(e){}}
+f.addEventListener('load',function(){ecouter();setTimeout(ecouter,1000);});
+addEventListener('message',function(e){if(String(e.origin).indexOf('youtube')<0)return;try{var d=JSON.parse(e.data);var st=d.info&&d.info.playerState;if(st===1)f.classList.add('prete');}catch(x){}});})();
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){basculerAssistant(false);document.getElementById('entete').classList.remove('ouvert');}});
 </script>
 </body>
