@@ -40,7 +40,7 @@ ul{list-style:none;padding:0}
 .drapeau{display:block;flex:none}
 
 /* ───── en-tête ───── */
-.entete{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--bord)}
+.entete{position:relative;z-index:40;background:#fff;border-bottom:1px solid var(--bord)}
 .barre{background:var(--bleu);color:#fff}
 .barre .wrap{height:36px;display:flex;align-items:center;gap:8px}
 .barre .rep{font-size:11px;line-height:16px;font-weight:700;letter-spacing:.06em;white-space:nowrap}
@@ -74,6 +74,10 @@ ul{list-style:none;padding:0}
 /* ───── hero ───── */
 .hero{--h:max(460px,calc(100svh - var(--h-entete)));position:relative;height:var(--h);overflow:hidden;background:#0B0726}
 .hero .video{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.hero .affiche{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero iframe{opacity:0;transition:opacity .8s ease}
+.hero iframe.prete{opacity:1}
+@media (prefers-reduced-motion:reduce){.hero iframe{display:none}}
 .hero iframe{position:absolute;top:50%;left:50%;border:0;transform:translate(-50%,-50%);
   width:calc(max(100vw,var(--h) * 1.7778) * 1.6);height:calc(max(100vw,var(--h) * 1.7778) * 1.6 * .5625)}
 .hero .voile{position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,7,38,.88) 0%,rgba(11,7,38,.35) 55%,rgba(11,7,38,.2) 100%)}
@@ -427,7 +431,7 @@ body.assistant-ouvert .fab{display:none}
 /* filtres : défilement horizontal au doigt sur mobile */
 .recherche-desk{display:none}
 @media (min-width:1024px){.recherche-desk{display:block}}
-.filtres{position:sticky;top:var(--h-sticky,109px);z-index:30;background:var(--gris);border-block:1px solid #E1E6EA}
+.filtres{position:static;z-index:30;background:var(--gris);border-block:1px solid #E1E6EA}
 .filtres ul{display:flex;gap:8px;padding:12px var(--marge);overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .filtres ul::-webkit-scrollbar{display:none}
 .filtres a{flex:none;height:40px;padding:0 16px;display:flex;align-items:center;border:1px solid #C9CFD9;border-radius:20px;background:#fff;font-size:14px;font-weight:500;color:var(--txt);text-decoration:none;white-space:nowrap;scroll-snap-align:start}

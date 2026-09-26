@@ -40,7 +40,7 @@ ul{list-style:none;padding:0}
 .drapeau{display:block;flex:none}
 
 /* ───── en-tête ───── */
-.entete{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--bord)}
+.entete{position:relative;z-index:40;background:#fff;border-bottom:1px solid var(--bord)}
 .barre{background:var(--bleu);color:#fff}
 .barre .wrap{height:36px;display:flex;align-items:center;gap:8px}
 .barre .rep{font-size:11px;line-height:16px;font-weight:700;letter-spacing:.06em;white-space:nowrap}
@@ -74,6 +74,10 @@ ul{list-style:none;padding:0}
 /* ───── hero ───── */
 .hero{--h:max(460px,calc(100svh - var(--h-entete)));position:relative;height:var(--h);overflow:hidden;background:#0B0726}
 .hero .video{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.hero .affiche{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero iframe{opacity:0;transition:opacity .8s ease}
+.hero iframe.prete{opacity:1}
+@media (prefers-reduced-motion:reduce){.hero iframe{display:none}}
 .hero iframe{position:absolute;top:50%;left:50%;border:0;transform:translate(-50%,-50%);
   width:calc(max(100vw,var(--h) * 1.7778) * 1.6);height:calc(max(100vw,var(--h) * 1.7778) * 1.6 * .5625)}
 .hero .voile{position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,7,38,.88) 0%,rgba(11,7,38,.35) 55%,rgba(11,7,38,.2) 100%)}
@@ -373,6 +377,7 @@ body.assistant-ouvert .fab{display:none}
 .mh-liens{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
 .mh-liens a{height:44px;padding:0 16px;display:flex;align-items:center;border:1px solid #9AAAA2;border-radius:22px;background:#fff;color:var(--txt);font-size:15px;text-decoration:none}
 .mh-liens a:hover{border-color:var(--ink);color:var(--ink)}
+@media (max-width:1023px){.mh-photo{margin:0 auto}.mh-ident{width:100%}}
 @media (min-width:768px){.mh-dl div{grid-template-columns:200px minmax(0,1fr);gap:16px}}
 @media (min-width:1024px){.mh-grille{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}.mh-photo{grid-column:span 3;max-width:none}.mh-ident{grid-column:5/span 8}.mh-ident h3{font-size:36px;line-height:44px}.mh-fonction{font-size:20px}}
 
@@ -416,7 +421,7 @@ body.assistant-ouvert .fab{display:none}
 </header>
 <main id="contenu">
 <section class="hero" aria-labelledby="titre-accueil">
-<div class="video" aria-hidden="true"><iframe src="https://www.youtube-nocookie.com/embed/k2GsfOZp6rM?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=k2GsfOZp6rM&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;disablekb=1&amp;iv_load_policy=3" title="Vidéo de fond" tabindex="-1" allow="autoplay; encrypted-media"></iframe></div>
+<div class="video" aria-hidden="true"><picture><source media="(max-width:767px)" srcset="assets/hero-ministere-mobile.webp"><img class="affiche" src="../assets/hero-ministere.webp" alt="" width="1920" height="947" fetchpriority="high"></picture><iframe onload="var f=this;setTimeout(function(){f.classList.add('prete')},2500)" src="https://www.youtube-nocookie.com/embed/k2GsfOZp6rM?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=k2GsfOZp6rM&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;rel=0&amp;disablekb=1&amp;iv_load_policy=3" title="Vidéo de fond" tabindex="-1" allow="autoplay; encrypted-media"></iframe></div>
 <div class="voile" aria-hidden="true"></div>
 <div class="wrap"><div class="filet" aria-hidden="true"><span></span><span><svg viewBox="0 0 24 24"><polygon points="12,1 14.9,8.9 23.4,9.2 16.7,14.4 19.1,22.6 12,17.8 4.9,22.6 7.3,14.4 0.6,9.2 9.1,8.9" fill="#00853F"/></svg></span><span></span></div><h1 id="titre-accueil">Votre sécurité,<br><span>notre priorité.</span></h1></div>
 </section>
