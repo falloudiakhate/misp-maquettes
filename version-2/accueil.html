@@ -83,7 +83,7 @@ ul{list-style:none;padding:0}
 .hero .voile{position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,7,38,.88) 0%,rgba(11,7,38,.35) 55%,rgba(11,7,38,.2) 100%)}
 .hero .wrap{position:absolute;left:0;right:0;bottom:48px}
 .hero h1{margin-top:16px;font-size:40px;line-height:46px;font-weight:700;letter-spacing:-.8px;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.35)}
-.hero h1 span{color:var(--jaune)}
+.hero h1 span{color:#fff;font-weight:400}
 
 /* ───── à la une ───── */
 .meta{display:flex;align-items:center;gap:10px}
@@ -159,25 +159,25 @@ ul{list-style:none;padding:0}
 .sec-directions .btn-contour{margin-top:20px}
 
 /* ───── pied de page ───── */
-.pied{padding:40px 0 32px;background:var(--ink-deep);color:#fff}
+.pied{padding:40px 0 32px;background:#FAFBFC;color:var(--txt);border-top:1px solid #E6E9EE}
 .pied .colonnes{display:grid;gap:32px}
 .pied .republique{display:flex;align-items:center;gap:12px}
 .pied .republique b{display:block;font-size:14px;line-height:18px}
-.pied .republique small{font-size:12px;line-height:18px;color:rgba(255,255,255,.8)}
-.pied .logo-blanc{margin-top:16px;display:flex}
+.pied .republique small{font-size:12px;line-height:18px;color:var(--txt2)}
+.pied .logo-blanc{display:flex}
 .pied .logo-blanc img{width:211px;height:30px}
-.pied .presentation{margin-top:16px;font-size:14px;line-height:22px;color:rgba(255,255,255,.82)}
+.pied .presentation{margin-top:16px;font-size:14px;line-height:22px;color:var(--txt2)}
 .pied h2{margin-bottom:8px;font-size:16px;line-height:24px;font-weight:700}
-.pied .urgences li{border-top:1px solid rgba(255,255,255,.18)}
+.pied .urgences li{border-top:1px solid #DDE2E9}
 .pied .urgences a{min-height:52px;display:flex;align-items:center;justify-content:space-between;text-decoration:none}
-.pied .urgences b{font-size:24px}
+.pied .urgences b{font-size:24px;white-space:nowrap;color:var(--txt)}
 .pied .contacts{display:flex;flex-direction:column;font-size:15px}
 .pied .reseaux{display:flex;gap:10px}
-.pied .reseau{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:22px;background:rgba(255,255,255,.12);color:#fff}
-.pied .sites{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;font-size:14px}
-.pied .sites span{width:100%;color:rgba(255,255,255,.72)}
-.pied .legal{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px}
-.pied .copy{margin-top:12px;font-size:12px;color:rgba(255,255,255,.72)}
+.pied .reseau{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:22px;background:#fff;color:var(--txt)}
+.pied .sites{margin-top:32px;padding-top:20px;border-top:1px solid #DDE2E9;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;font-size:14px}
+.pied .sites span{width:100%;color:var(--txt2)}
+.pied .legal{margin-top:20px;padding-top:20px;border-top:1px solid #DDE2E9;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px}
+.pied .copy{margin-top:12px;font-size:12px;color:var(--txt2)}
 
 /* ───── assistant ───── */
 .fab{position:fixed;right:16px;bottom:20px;z-index:50;width:60px;height:60px;padding:0;display:flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:30px;background:var(--ink);color:#fff;font:inherit;font-size:16px;font-weight:700;box-shadow:0 8px 24px rgba(15,20,60,.32);cursor:pointer}
@@ -224,16 +224,16 @@ body.assistant-ouvert .fab{display:none}
   .barre .wrap{height:40px}
   .barre .drapeau,.barre .rep{display:none}
   .barre .suivre{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;color:#4A5261}
-  .barre .reseaux{display:flex;color:var(--bleu)}
-  .barre .reseau{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--bleu)}
+  .barre .reseaux{display:flex;color:var(--txt)}
+  .barre .reseau{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--txt)}
   .barre .reseau svg{width:17px;height:17px}
   .langue{font-size:13px}
   .marque .wrap{height:72px}
   .marque .gauche{display:flex;align-items:center;gap:20px}
   .marque .republique{display:flex;align-items:center;gap:12px;text-decoration:none}
   .marque .republique b{display:block;font-size:13px;line-height:18px;letter-spacing:.04em;color:var(--txt)}
-  .marque .republique small{display:flex;gap:5px;font-size:11px;line-height:18px;color:#4A5261}
-  .marque .republique small i{font-style:normal;color:#1C07A4}
+  .marque .republique small{display:flex;gap:5px;font-size:11px;line-height:18px;color:var(--txt)}
+  .marque .republique small i{font-style:normal;color:var(--txt)}
   .marque .sep{display:block;width:1px;height:34px;background:var(--bord)}
   .actions{display:none}
   .recherche-entete{display:flex}
@@ -363,6 +363,93 @@ body.assistant-ouvert .fab{display:none}
 @keyframes descente{from{transform:translateY(-100%)}}
 @media (prefers-reduced-motion:reduce){.entete.fixe{animation:none}}
 
+/* liens de section : sobres, flèche animée (modèle DSFR) */
+.tete .lien{display:inline-flex;align-items:center;gap:8px;font-weight:500;color:var(--ink);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:2px;white-space:nowrap;transition:background-size .2s}
+.tete .lien::after{content:"";width:16px;height:16px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .2s}
+.tete .lien:hover{background-size:100% 2px}
+.tete .lien:hover::after{transform:translateX(3px)}
+@media (prefers-reduced-motion:reduce){.tete .lien::after{transition:none}}
+
+/* cartes d’actualités communes (accueil, actualités) */
+/* À la une : un seul article, carte horizontale (modèle interieur.gouv.fr) */
+.une-carte a{display:grid;border:1px solid var(--bord);background:#fff;text-decoration:none;color:inherit}
+.une-carte img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;display:block}
+.une-corps{padding:20px;display:flex;flex-direction:column;gap:12px}
+.une-tags{display:flex;flex-wrap:wrap;gap:8px}
+.une-tags span{padding:4px 12px;border-radius:16px;background:#EEEEEE;font-size:14px;line-height:24px;color:#161616}
+.une-titre{font-size:20px;line-height:28px;font-weight:700;color:var(--ink)}
+.une-carte a{overflow:hidden;border-radius:0;transition:background-color .2s}
+.une-carte img{transition:transform .3s ease}
+.une-carte a:hover{background:#F6F6F6}
+
+.une-carte a:hover .une-fleche{transform:translateX(4px)}
+.une-fleche{transition:transform .25s}
+@media (prefers-reduced-motion:reduce){.une-carte a,.une-carte img,.une-fleche{transition:none}.une-carte a:hover img{transform:none}}
+.une-resume{font-size:14px;line-height:24px;color:var(--txt2);display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.une-pied{margin-top:auto;padding-top:8px;display:flex;align-items:center;justify-content:space-between;font-size:12px;line-height:20px;color:#666}
+.une-fleche{font-size:24px;color:var(--ink)}
+@media (min-width:1024px){.une-carte a{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.une-carte img{aspect-ratio:auto;height:100%;min-height:360px}.une-corps{padding:40px 48px}.une-titre{font-size:24px;line-height:32px}.une-resume{font-size:16px;line-height:28px}.une-pied{font-size:14px;line-height:24px}}
+/* À la une : articles suivants, sous la carte principale */
+.une-suite{margin-top:24px;display:grid;gap:16px}
+.une-suite a{height:100%;display:flex;flex-direction:column;border:1px solid var(--bord);background:#fff;text-decoration:none;color:inherit;transition:background-color .2s}
+.une-suite a:hover{background:#F6F6F6}
+.une-suite a:hover .une-fleche{transform:translateX(4px)}
+.une-suite img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.suite-corps{flex:1;padding:20px 24px 24px;display:flex;flex-direction:column;gap:12px}
+.suite-resume{font-size:14px;line-height:22px;color:var(--txt2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.suite-titre{font-size:18px;line-height:26px;font-weight:700;color:var(--ink)}
+@media (min-width:768px){.une-suite{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}}
+
+/* bloc d’aide commun avant le pied de page : carte grise dans une bande blanche */
+.sec-aide{padding:48px 0;background:#fff}
+.aide-carte{padding:28px 24px;display:flex;flex-direction:column;gap:20px;background:var(--gris);border-radius:12px}
+.aide-carte h2{font-size:22px;line-height:28px;font-weight:700;color:var(--txt)}
+.aide-carte p{margin-top:6px;font-size:16px;line-height:24px;color:var(--txt2)}
+.aide-carte .boutons{display:flex;flex-direction:column;gap:10px}
+.aide-carte .boutons a,.aide-carte .boutons button{height:48px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:24px;font:inherit;font-size:15px;font-weight:700;text-decoration:none;cursor:pointer}
+.aide-carte .plein{border:0;background:var(--ink);color:#fff}
+.aide-carte .contour{border:1px solid var(--ink);background:#fff;color:var(--ink)}
+.aide-carte .plein:hover{background:#15057D}.aide-carte .contour:hover{background:#F6F6F6}
+@media (min-width:768px){.aide-carte .boutons{flex-direction:row}}
+@media (min-width:1024px){.sec-aide{padding:72px 0}.aide-carte{padding:40px 48px;flex-direction:row;align-items:center;justify-content:space-between;gap:32px}.aide-carte h2{font-size:28px;line-height:36px}}
+
+/* démarches les plus demandées : liste épurée */
+.dem-titre{margin:32px 0 8px!important}
+.dem-titre h3{font-size:18px!important;line-height:28px}
+.dem-titre .lien{font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.demarches{gap:0!important;border-top:1px solid var(--bord)}
+.demarches li{border-bottom:1px solid var(--bord)}
+.demarches a{min-height:56px!important;padding:0 4px!important;gap:12px!important;background:none!important;border:0!important;border-radius:0!important}
+.demarches .pastille{width:auto!important;height:auto!important;background:none!important;border-radius:0!important}
+.demarches .pastille svg{width:20px;height:20px}
+.demarches small{display:none}
+.demarches .ct{display:none}
+.demarches b{font-size:15px;font-weight:500}
+.demarches a:hover b{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.demarches .chev{display:flex!important}
+@media (min-width:1024px){.demarches{grid-template-columns:repeat(3,minmax(0,1fr))!important;column-gap:32px!important;border-top:0}.demarches li{border-top:0}.demarches li:nth-child(-n+3){border-top:1px solid var(--bord)}}
+
+/* bloc recherche épuré : intro, puis barre de recherche et assistant alignés sur la même hauteur */
+@media (min-width:1024px){
+  .carte-recherche{grid-template-columns:minmax(0,1fr) auto!important;column-gap:16px!important;row-gap:0!important;align-items:end!important;padding:32px 40px!important}
+  .carte-recherche .pilule{margin-top:16px!important}
+  .assistant-encart{height:64px!important;padding:0 20px 0 8px!important;flex-direction:row!important;align-items:center!important;gap:12px!important;border-radius:32px!important;white-space:nowrap}
+  .assistant-encart .pastille{width:48px!important;height:48px!important}
+  .assistant-encart b{font-size:16px!important;line-height:22px!important}
+  .assistant-encart small{font-size:13px;line-height:18px}
+  .assistant-encart .chev{margin:0!important;height:auto!important;padding:0!important;border:0!important;background:none!important}
+  .assistant-encart .chev::before{content:none!important}
+}
+
+
+.hero-urgences{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+.hero-urgences a{height:40px;padding:0 14px 0 12px;display:flex;align-items:center;gap:8px;border-radius:20px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#fff;font-size:14px;text-decoration:none}
+.hero-urgences b{font-size:16px}
+.hero-urgences a:hover{background:rgba(255,255,255,.24)}
+@media (max-width:767px){.hero h1{font-size:25px!important;line-height:32px!important;white-space:nowrap;letter-spacing:-.5px!important}.hero-urgences a{height:36px;font-size:13px}.hero-urgences span{display:none}.hero .wrap{bottom:124px!important}}
+@media (max-width:379px){.hero h1{font-size:22px!important}}
+@media (min-width:1024px){.hero h1{font-size:56px!important;line-height:64px!important;white-space:nowrap}.hero-urgences{margin-top:24px}}
+
 @media (min-width:1024px){
   .une-principale img{min-height:320px!important}
   .une-liste{display:flex;flex-direction:column}
@@ -372,19 +459,6 @@ body.assistant-ouvert .fab{display:none}
   .agenda ul{flex:1;justify-content:space-around}
 }
 /* Le Ministre : même présentation que l'en-tête de la page du Ministre */
-.mh-grille{display:grid;gap:24px;align-items:center}
-.mh-photo{width:100%;max-width:300px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:60% 8%;border-radius:12px;box-shadow:0 16px 40px rgba(20,24,60,.12)}
-.mh-ident h3{font-size:28px;line-height:36px;font-weight:700;color:var(--txt)}
-.mh-fonction{margin-top:8px;font-size:18px;line-height:28px;color:var(--txt2)}
-.mh-dl{margin:24px 0 0;border-top:1px solid #DDE2E9}
-.mh-dl div{padding:12px 0;display:grid;gap:2px;border-bottom:1px solid #DDE2E9;font-size:16px;line-height:24px}
-.mh-dl dt{color:var(--txt2)}.mh-dl dd{margin:0;font-weight:700;color:var(--txt)}
-.mh-liens{margin-top:24px;display:flex;flex-wrap:wrap;gap:8px}
-.mh-liens a{height:44px;padding:0 16px;display:flex;align-items:center;border:1px solid #9AA3B2;border-radius:22px;background:#fff;color:var(--txt);font-size:15px;text-decoration:none}
-.mh-liens a:hover{border-color:var(--ink);color:var(--ink)}
-@media (max-width:1023px){.mh-photo{margin:0 auto}.mh-ident{width:100%}}
-@media (min-width:768px){.mh-dl div{grid-template-columns:200px minmax(0,1fr);gap:16px}}
-@media (min-width:1024px){.mh-grille{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}.mh-photo{grid-column:span 3;max-width:none}.mh-ident{grid-column:5/span 8}.mh-ident h3{font-size:36px;line-height:44px}.mh-fonction{font-size:20px}}
 
 .themes{margin-top:18px}
 .themes>span{display:block;margin-bottom:10px;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--txt2)}
@@ -418,6 +492,68 @@ body.assistant-ouvert .fab{display:none}
 .f-liste a{min-height:60px;display:flex;align-items:center;gap:14px;font-size:16px;font-weight:500;color:var(--txt);text-decoration:none}
 @media (prefers-reduced-motion:reduce){.feuille[open]{animation:none}}
 @media (min-width:1024px){.themes>span{white-space:nowrap}.themes ul{flex-wrap:wrap!important;gap:8px!important}.themes a .th-ic{display:flex}.themes a{padding:0 14px 0 6px!important;height:40px!important}.themes ul li:nth-child(n+3):not(.th-plus){display:block}.th-plus{display:none}}
+
+/* mobile : section recherche allégée */
+@media (max-width:767px){
+  .sec-demarches{padding:32px 0!important}
+  .sec-demarches .tete h2{font-size:22px!important;line-height:28px!important}
+  .sec-demarches .tete{margin-bottom:12px!important}
+  .carte-recherche .intro{display:none}
+  .carte-recherche form{margin-top:0!important}
+  .assistant-encart{display:none!important}
+  .dem-titre{margin:24px 0 10px!important}
+  .dem-titre h3{font-size:16px!important}
+  .demarches{grid-template-columns:1fr 1fr!important;gap:8px!important;border:0!important}
+  .demarches li{border:0!important}
+  .demarches a{min-height:52px!important;padding:0 12px!important;border:1px solid var(--bord)!important;border-radius:10px!important;background:#fff!important}
+  .demarches b{font-size:14px!important;line-height:18px}
+  .demarches .chev{display:none!important}
+  .demarches li:nth-child(4),.demarches li:nth-child(6){display:none}
+  .demarches .lg{display:none}.demarches .ct{display:inline}
+  .sec-demarches .btn-contour{margin-top:12px!important;height:44px}
+}
+
+/* missions : petites cartes claires, aérées */
+@media (max-width:767px){.tete{flex-wrap:wrap;row-gap:4px}.tete h2{flex-basis:100%}}
+.mis-intro{margin:-8px 0 24px;max-width:720px;font-size:16px;line-height:26px;color:var(--txt2)}
+.missions{gap:12px!important}
+.mission{padding:20px!important;gap:14px!important;flex-direction:row!important;align-items:flex-start;background:#fff!important;border:1px solid var(--bord)!important;border-radius:12px!important;box-shadow:none!important;transition:background-color .2s,border-color .2s}
+.mission:hover{background:#F6F6F6!important}
+.mission .pastille{flex:none;width:40px!important;height:40px!important;border-radius:20px!important;background:var(--gris)!important;color:var(--ink)!important;display:flex;align-items:center!important;justify-content:center!important}
+.mission .pastille svg{width:20px;height:20px}
+.mission .corps{gap:4px!important}
+.mission h3{margin:0!important;font-size:16px!important;line-height:22px!important}
+.mission p{font-size:14px!important;line-height:21px!important;color:var(--txt2)}
+.mission .plus{display:none!important}
+@media (min-width:768px){.missions{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}}
+@media (min-width:1024px){.missions{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:16px!important}.mission{flex-direction:column!important;padding:24px!important;gap:16px!important}}
+
+/* Le Ministre : carte du ministre en fonction + prédécesseurs */
+.min-grille{display:grid;gap:32px}
+.min-carte{display:flex;flex-direction:column;align-items:center;gap:24px;padding:32px 24px;background:#fff;border-radius:12px;text-align:center;text-decoration:none;color:inherit;transition:background .2s}
+.min-carte:hover{background:#F6F6F6}
+.min-carte img{flex:none;width:160px;height:160px;border-radius:50%;object-fit:cover}
+.min-etiq{font-size:14px;line-height:20px;font-weight:700;color:var(--ink)}
+.min-carte h3{margin-top:8px;font-size:28px;line-height:36px;font-weight:700;color:var(--txt)}
+.min-fonction{margin-top:8px;font-size:18px;line-height:28px;color:var(--txt2)}
+.min-depuis{margin-top:16px;font-size:16px;line-height:24px;color:var(--txt2)}
+.min-fleche{display:inline-block;margin-top:24px;width:24px;height:24px;background:var(--ink);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M16.17 13H4v-2h12.17l-5.36-5.36 1.41-1.41L20 12l-7.78 7.78-1.41-1.41z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M16.17 13H4v-2h12.17l-5.36-5.36 1.41-1.41L20 12l-7.78 7.78-1.41-1.41z'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .2s}
+.min-carte:hover .min-fleche{transform:translateX(6px)}
+.predecesseurs h3{margin-bottom:8px;font-size:14px;line-height:20px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--txt2)}
+.predecesseurs li{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid #DDE2E9}
+.predecesseurs li:last-child{border-bottom:0}
+.predecesseurs img{flex:none;width:64px;height:64px;border-radius:50%;object-fit:cover;background:#fff}
+.predecesseurs b{display:block;font-size:16px;line-height:24px;color:var(--txt)}
+.predecesseurs small{font-size:14px;line-height:20px;color:var(--txt2)}
+@media (min-width:768px){.min-carte{flex-direction:row;align-items:center;gap:40px;padding:40px;text-align:left}.min-carte img{width:180px;height:180px}}
+@media (min-width:1024px){.min-grille{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:center}.min-carte{grid-column:span 7}.predecesseurs{grid-column:8/span 5;padding-left:16px}.min-carte h3{font-size:32px;line-height:40px}}
+@media (min-width:1280px){.min-carte{grid-column:span 8}.predecesseurs{grid-column:10/span 3;padding-left:0}}
+
+
+/* Aide avant le pied de page : carte grise dans une bande blanche (ne se confond pas avec le pied) */
+.sec-directions{padding-bottom:32px}
+.sec-directions+.sec-aide{padding-top:0!important}
+@media (min-width:1024px){.sec-directions{padding-bottom:40px}}
 </style>
 </head>
 <body class="v2">
@@ -432,7 +568,7 @@ body.assistant-ouvert .fab{display:none}
 </div></div>
 <div class="marque"><div class="wrap">
 <div class="gauche">
-<a class="republique" href="accueil.html"><svg class="drapeau" width="27" height="18" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span><b>RÉPUBLIQUE DU SÉNÉGAL</b><small>Un Peuple <i>★</i> Un But <i>★</i> Une Foi</small></span></a>
+<a class="republique" href="accueil.html"><svg class="drapeau" width="36" height="24" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span><b>RÉPUBLIQUE DU SÉNÉGAL</b><small>Un Peuple <i>★</i> Un But <i>★</i> Une Foi</small></span></a>
 <span class="sep" aria-hidden="true"></span>
 <a class="logo" href="accueil.html"><img src="../assets/92150fb738576e449e87557f00f77528.png" alt="Ministère de l’Intérieur et de la Sécurité publique, accueil" width="211" height="30"></a>
 </div>
@@ -454,45 +590,45 @@ body.assistant-ouvert .fab{display:none}
 <section class="hero" aria-labelledby="titre-accueil">
 <div class="video" aria-hidden="true"><picture><source media="(max-width:767px)" srcset="../assets/hero-ministere-mobile.webp"><img class="affiche" src="../assets/hero-ministere.webp" alt="" width="1920" height="947" fetchpriority="high"></picture><video id="video-hero" autoplay muted loop playsinline preload="metadata" poster="../assets/hero-video-affiche.webp" oncanplay="this.classList.add('prete')"><source src="../assets/hero-video-mobile.mp4" type="video/mp4" media="(max-width:767px)"><source src="../assets/hero-video.mp4" type="video/mp4"></video></div>
 <div class="voile" aria-hidden="true"></div>
-<div class="wrap"><div class="filet" aria-hidden="true"><span></span><span><svg viewBox="0 0 24 24"><polygon points="12,1 14.9,8.9 23.4,9.2 16.7,14.4 19.1,22.6 12,17.8 4.9,22.6 7.3,14.4 0.6,9.2 9.1,8.9" fill="#00853F"/></svg></span><span></span></div><h1 id="titre-accueil">Votre sécurité,<br><span>notre priorité.</span></h1></div>
+<div class="wrap"><div class="filet" aria-hidden="true"><span></span><span><svg viewBox="0 0 24 24"><polygon points="12,1 14.9,8.9 23.4,9.2 16.7,14.4 19.1,22.6 12,17.8 4.9,22.6 7.3,14.4 0.6,9.2 9.1,8.9" fill="#00853F"/></svg></span><span></span></div><h1 id="titre-accueil">Votre sécurité, <span>notre priorité.</span></h1>
+<ul class="hero-urgences" aria-label="Numéros d’urgence"><li><a href="tel:17"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Police secours</span><b>17</b></a></li><li><a href="tel:18"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Sapeurs-pompiers</span><b>18</b></a></li><li><a href="tel:800002020"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Gendarmerie nationale</span><b>800 00 20 20</b></a></li></ul></div>
 </section>
 <section class="sec" aria-labelledby="t-une"><div class="wrap">
 <div class="tete"><h2 id="t-une">À la une</h2><a class="lien" href="actualites.html">Toutes les actualités</a></div>
-<div class="une-grille">
-<article class="une-principale"><a href="article-desencombrement.html">
+<article class="une-carte"><a href="article-desencombrement.html">
 <img src="../assets/alaune.png" alt="Le Ministre de l’Intérieur et de la Sécurité publique échange avec des autorités administratives lors du programme de désencombrement" width="1080" height="720" loading="lazy">
-<div class="meta"><span class="etq">Action du Ministère</span><time>22 septembre 2026</time></div><span class="titre">Programme de désencombrement : le Ministre de l’Intérieur et de la Sécurité publique sur le terrain</span></a></article>
-<ul class="une-liste"><li><a href="actualites.html"><div class="meta"><span class="etq">Action du Ministère</span><time>3 août 2026</time></div><span class="titre">Sécurité publique : l’État accélère le renforcement de la Police nationale, Touba au cœur du dispositif</span></a></li><li><a href="actualites.html"><div class="meta"><span class="etq etq-or">Cérémonie officielle</span><time>21 juillet 2026</time></div><span class="titre">Installation des Gouverneurs des régions de Tambacounda et de Kaolack</span></a></li><li><a href="actualites.html"><div class="meta"><span class="etq etq-or">Cérémonie officielle</span><time>15 juillet 2026</time></div><span class="titre">Sortie de la première promotion des Officiers Sapeurs-Pompiers</span></a></li></ul>
-<aside class="agenda" aria-labelledby="t-agenda"><h3 id="t-agenda">Agenda du Ministre</h3>
-<ul><li><time>31 août 2026</time><a href="actualites.html">Visite de travail à la Direction de l’Automatisation des Fichiers</a></li><li><time>29 juillet 2026</time><a href="actualites.html">Entretien téléphonique avec son homologue français</a></li><li><time>15 au 25 juillet 2026</time><a href="actualites.html">Tournée auprès des familles religieuses, en 5 étapes</a></li></ul>
-<a class="lien" href="actualites.html">Tout l’agenda</a></aside>
-</div></div></section>
+<span class="une-corps">
+<span class="une-tags"><span>Action du Ministère</span><span>Administration territoriale</span></span>
+<span class="une-titre">Programme de désencombrement : le Ministre de l’Intérieur et de la Sécurité publique sur le terrain</span>
+<span class="une-resume">Le Ministre de l’Intérieur et de la Sécurité publique s’est rendu sur le terrain pour faire le point avec les gouverneurs, préfets et sous-préfets chargés du programme national de désencombrement, qui vise à libérer la voie publique et à améliorer le cadre de vie des populations.</span>
+<span class="une-pied"><time datetime="2026-09-22">22 septembre 2026</time><span class="une-fleche" aria-hidden="true">→</span></span>
+</span></a></article>
+<ul class="une-suite"><li><a href="actualites.html"><img src="../assets/actu-turkiye-bnsp.webp" alt="L’Ambassadrice de Türkiye passe en revue les sapeurs-pompiers de la BNSP" width="960" height="540" loading="lazy"><span class="suite-corps"><span class="une-tags"><span>Action du Ministère</span></span><span class="suite-titre">Visite de travail de l’Ambassadrice de la République de Türkiye à la Brigade nationale des Sapeurs-pompiers</span><span class="suite-resume">Présentation de l’organisation, des missions et des capacités opérationnelles de la BNSP à l’Ambassadrice, en vue de renforcer la coopération entre les deux pays.</span><span class="une-pied"><time>17 septembre 2026</time><span class="une-fleche" aria-hidden="true">→</span></span></span></a></li><li><a href="actualites.html"><img src="../assets/actu-visite-daf.webp" alt="Agents de la Direction de l’Automatisation des Fichiers à leurs postes de travail" width="960" height="540" loading="lazy"><span class="suite-corps"><span class="une-tags"><span>Agenda du Ministre</span></span><span class="suite-titre">Visite de travail à la Direction de l’Automatisation des Fichiers</span><span class="suite-resume">Le Ministre s’est enquis des conditions de travail des équipes et a formulé des orientations pour renforcer l’efficacité et la qualité du service.</span><span class="une-pied"><time>31 août 2026</time><span class="une-fleche" aria-hidden="true">→</span></span></span></a></li><li><a href="actualites.html"><img src="../assets/actu-police-touba.webp" alt="Coupure du ruban lors de l’inauguration du commissariat d’arrondissement de Touba" width="960" height="540" loading="lazy"><span class="suite-corps"><span class="une-tags"><span>Action du Ministère</span></span><span class="suite-titre">Sécurité publique : l’État accélère le renforcement de la Police nationale, Touba au cœur du dispositif</span><span class="suite-resume">Inauguration d’un commissariat d’arrondissement, renforcement des effectifs et police de proximité : Touba illustre la consolidation du maillage sécuritaire.</span><span class="une-pied"><time>3 août 2026</time><span class="une-fleche" aria-hidden="true">→</span></span></span></a></li></ul>
+</div></section>
 <section class="sec sec-gris sec-demarches" aria-labelledby="t-dem"><div class="wrap">
 <div class="tete"><h2 id="t-dem">Que souhaitez-vous faire aujourd’hui&nbsp;?</h2><a class="lien" href="services.html" style="display:none">Voir tous les services</a></div>
 <div class="carte-recherche">
 <div><p class="intro">Une démarche, une information officielle, un service&nbsp;: recherchez-le ici.</p>
 <form role="search" action="services.html" style="margin-top:20px"><label class="sr" for="q-accueil">Rechercher une démarche ou une information</label>
-<div class="pilule"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></span><input id="q-accueil" name="q" type="search" placeholder="Ex. : carte d’identité"><button type="submit" aria-label="Rechercher"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="txt">Rechercher</span></button></div></form><div class="themes"><span>Par thème</span><ul><li><a href="services.html#g0"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.4 1.7-2 3-2s2.4.6 3 2M14 10h4M14 13h3"/></svg></span>Identité et voyage</a></li><li><a href="services.html#g1"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>Étrangers</a></li><li><a href="services.html#g2"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg></span>Attestations</a></li><li><a href="services.html#g3"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg></span>Associations et ONG</a></li><li><a href="services.html#g4"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.4 8.4-8 9.5C7.4 20.4 4 17 4 12V6z"/><path d="m9 12 2 2 4-4"/></svg></span>Armes et véhicules</a></li><li class="th-plus"><button type="button" onclick="document.getElementById('dlg-themes').showModal()" aria-haspopup="dialog" aria-label="Voir tous les thèmes" title="Tous les thèmes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button></li></ul></div><dialog class="feuille" id="dlg-themes" aria-labelledby="t-themes" onclick="if(event.target===this)this.close()"><div class="f-tete"><h3 id="t-themes">Choisir un thème</h3><button type="button" class="f-fermer" aria-label="Fermer" onclick="this.closest('dialog').close()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button></div><ul class="f-liste"><li><a href="services.html#g0"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.4 1.7-2 3-2s2.4.6 3 2M14 10h4M14 13h3"/></svg></span>Identité et voyage</a></li><li><a href="services.html#g1"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span>Étrangers</a></li><li><a href="services.html#g2"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg></span>Attestations</a></li><li><a href="services.html#g3"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg></span>Associations et ONG</a></li><li><a href="services.html#g4"><span class="th-ic" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 20 6v6c0 5-3.4 8.4-8 9.5C7.4 20.4 4 17 4 12V6z"/><path d="m9 12 2 2 4-4"/></svg></span>Armes et véhicules</a></li></ul></dialog></div>
-<button class="assistant-encart" type="button" onclick="basculerAssistant(true)"><span class="pastille"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="corps"><b>Une question précise&nbsp;?</b><small>L’assistant du Ministère vous répond à partir des fiches démarches et des communiqués officiels.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></button>
+<div class="pilule"><span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg></span><input id="q-accueil" name="q" type="search" placeholder="Ex. : carte d’identité"><button type="submit" aria-label="Rechercher"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="txt">Rechercher</span></button></div></form></div>
+<button class="assistant-encart" type="button" onclick="basculerAssistant(true)"><span class="pastille"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span><span class="corps"><b>Une question précise&nbsp;?</b><small>L’assistant vous répond</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></button>
 </div>
 <div class="dem-titre"><h3>Démarches les plus demandées</h3><a class="lien" href="services.html">Voir tous les services</a></div>
-<ul class="demarches"><li><a href="fiche-cni.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="11" r="2"></circle><path d="M6 16c.6-1.3 1.7-2 3-2s2.4.7 3 2"></path><line x1="14" y1="10" x2="18" y2="10"></line><line x1="14" y1="13.5" x2="17" y2="13.5"></line></svg></span><span class="corps"><b>Carte d’identité</b><small>Demande, renouvellement, perte</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"></rect><circle cx="12" cy="10" r="3"></circle><line x1="9" y1="16.5" x2="15" y2="16.5"></line></svg></span><span class="corps"><b>Passeport</b><small>Pièces, dépôt et paiement</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17" cy="9" r="2.5"></circle><path d="M16.5 14.2c2.6.5 4.5 2.8 4.5 5.8"></path></svg></span><span class="corps"><b>Association</b><small>Constitution et déclaration</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"></path></svg></span><span class="corps"><b>Carte d’identité d’étranger</b><small>Étrangers résidant au Sénégal</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.9-3.4 8.4-7 10-3.6-1.6-7-5.1-7-10V6z"></path><polyline points="9 12 11 14 15 10"></polyline></svg></span><span class="corps"><b>Permis de port d’arme</b><small>Achat et détention d’une arme</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-4l2.2-5h11.6l2.2 5v4"></path><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="16" x2="20" y2="16"></line><circle cx="7.5" cy="18.5" r="1.6"></circle><circle cx="16.5" cy="18.5" r="1.6"></circle></svg></span><span class="corps"><b>Véhicule importé</b><small>Attestation de vérification</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul>
+<ul class="demarches"><li><a href="fiche-cni.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="11" r="2"></circle><path d="M6 16c.6-1.3 1.7-2 3-2s2.4.7 3 2"></path><line x1="14" y1="10" x2="18" y2="10"></line><line x1="14" y1="13.5" x2="17" y2="13.5"></line></svg></span><span class="corps"><b>Carte d’identité</b><small>Demande, renouvellement, perte</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"></rect><circle cx="12" cy="10" r="3"></circle><line x1="9" y1="16.5" x2="15" y2="16.5"></line></svg></span><span class="corps"><b>Passeport</b><small>Pièces, dépôt et paiement</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17" cy="9" r="2.5"></circle><path d="M16.5 14.2c2.6.5 4.5 2.8 4.5 5.8"></path></svg></span><span class="corps"><b>Association</b><small>Constitution et déclaration</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><line x1="3" y1="12" x2="21" y2="12"></line><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18z"></path></svg></span><span class="corps"><b>Carte d’identité d’étranger</b><small>Étrangers résidant au Sénégal</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.9-3.4 8.4-7 10-3.6-1.6-7-5.1-7-10V6z"></path><polyline points="9 12 11 14 15 10"></polyline></svg></span><span class="corps"><b><span class="lg">Permis de port d’arme</span><span class="ct">Port d’arme</span></b><small>Achat et détention d’une arme</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li><a href="services.html"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-4l2.2-5h11.6l2.2 5v4"></path><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="16" x2="20" y2="16"></line><circle cx="7.5" cy="18.5" r="1.6"></circle><circle cx="16.5" cy="18.5" r="1.6"></circle></svg></span><span class="corps"><b>Véhicule importé</b><small>Attestation de vérification</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul>
 <a class="btn-contour" href="services.html">Voir tous les services<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 </div></section>
 <section class="sec" aria-labelledby="t-mis"><div class="wrap">
-<div class="tete"><h2 id="t-mis">Les missions du Ministère</h2></div>
+<div class="tete"><h2 id="t-mis">Les missions du Ministère</h2><a class="lien" href="ministere.html">Découvrir le Ministère</a></div>
+<p class="mis-intro">Représenter l’État sur tout le territoire, assurer la sécurité des personnes et des biens, protéger les populations et organiser les élections.</p>
 <ul class="missions">
-<li class="mission-intro"><div class="filet" aria-hidden="true"><span></span><span><svg viewBox="0 0 24 24"><polygon points="12,1 14.9,8.9 23.4,9.2 16.7,14.4 19.1,22.6 12,17.8 4.9,22.6 7.3,14.4 0.6,9.2 9.1,8.9" fill="#00853F"/></svg></span><span></span></div><p class="t">Au service de l’État et des citoyens</p><p>Représenter l’État sur tout le territoire, assurer la sécurité des personnes et des biens, protéger les populations et organiser les élections.</p><a href="ministere.html">Découvrir le Ministère<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></li>
 <li class="mission"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"></path><path d="M5 21V10M19 21V10M9 21v-7M15 21v-7"></path><path d="M2 10 12 3l10 7z"></path></svg></span><span class="corps"><h3>Administration territoriale</h3><p>Gouverneurs, préfets et sous-préfets représentent l’État au plus près des populations.</p><a class="plus" href="ministere.html">En savoir plus<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="sr"> sur administration territoriale</span></a></span></li><li class="mission"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 20 6v6c0 5-3.4 8.4-8 9.5C7.4 20.4 4 17 4 12V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span><span class="corps"><h3>Sécurité intérieure</h3><p>La Police nationale protège les personnes et les biens et maintient l’ordre public.</p><a class="plus" href="ministere.html">En savoir plus<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="sr"> sur sécurité intérieure</span></a></span></li><li class="mission"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="m9 14 2 2 4-4"></path></svg></span><span class="corps"><h3>Police administrative</h3><p>Associations, ONG, armes et agréments : les autorisations relevant du Ministère.</p><a class="plus" href="ministere.html">En savoir plus<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="sr"> sur police administrative</span></a></span></li><li class="mission"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a6 6 0 0 0 6-6c0-4-3-6-4-9-1 3-3 3-3 6a2 2 0 0 1-4 0c-1 1-1 2-1 3a6 6 0 0 0 6 6z"></path></svg></span><span class="corps"><h3>Protection civile</h3><p>Prévenir et gérer les risques et les catastrophes, avec les Sapeurs-pompiers.</p><a class="plus" href="ministere.html">En savoir plus<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="sr"> sur protection civile</span></a></span></li><li class="mission"><span class="pastille" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="1.5"></rect><path d="M9 10V4h6v6"></path><path d="M8 15h8"></path></svg></span><span class="corps"><h3>Élections</h3><p>Organisation matérielle des élections et des référendums, avec la DGE.</p><a class="plus" href="ministere.html">En savoir plus<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg><span class="sr"> sur élections</span></a></span></li>
 </ul></div></section>
 <section class="sec sec-gris" aria-labelledby="t-min"><div class="wrap">
 <div class="tete"><h2 id="t-min">Le Ministre</h2><a class="lien" href="ministre.html">Voir la page du Ministre</a></div>
-<div class="mh-grille">
-<img class="mh-photo" src="../assets/ministre_makhtar_cisse_26b3093397.webp" alt="Portrait officiel de Mouhamadou Makhtar Cissé, Ministre de l’Intérieur et de la Sécurité publique" width="1200" height="1577" loading="lazy">
-<div class="mh-ident"><h3>Mouhamadou Makhtar Cissé</h3><p class="mh-fonction">Ministre de l’Intérieur et de la Sécurité publique</p>
-<dl class="mh-dl"><div><dt>En fonction depuis</dt><dd>le 1er juin 2026</dd></div><div><dt>Corps d’origine</dt><dd>Inspecteur général d’État (IGE)</dd></div><div><dt>Formation</dt><dd>Droit, Sciences politiques, Finances et Gestion publique</dd></div></dl>
-<ul class="mh-liens"><li><a href="ministre.html#mot">Mot du Ministre</a></li><li><a href="ministre.html#cadre">Cadre légal</a></li><li><a href="ministre.html#parcours">Parcours</a></li></ul>
-</div></div>
+<div class="min-grille">
+<a class="min-carte" href="ministre.html"><img src="../assets/ministre-profil.webp" alt="Portrait officiel de Mouhamadou Makhtar Cissé" width="600" height="600" loading="lazy"><div><p class="min-etiq">Ministre en fonction</p><h3>Mouhamadou Makhtar Cissé</h3><p class="min-fonction">Ministre de l’Intérieur et de la Sécurité publique</p><p class="min-depuis">Depuis le 1er juin 2026</p><span class="min-fleche" aria-hidden="true"></span></div></a>
+<div class="predecesseurs"><h3>Ses deux derniers prédécesseurs</h3><ul><li><img src="../assets/bamba-cisse.webp" alt="" width="240" height="240" loading="lazy"><span><b>Mouhamadou Bamba Cissé</b><small>Septembre 2025 – juin 2026</small></span></li><li><img src="../assets/jb-tine.webp" alt="" width="240" height="240" loading="lazy"><span><b>Général Jean Baptiste Tine</b><small>Avril 2024 – septembre 2025</small></span></li></ul></div>
+</div>
 </div></section>
 <section class="sec sec-directions" aria-labelledby="t-dir"><div class="wrap">
 <div class="tete"><h2 id="t-dir">Directions et services</h2><a class="lien" href="ministere.html">Voir l’annuaire</a></div>
@@ -500,13 +636,16 @@ body.assistant-ouvert .fab{display:none}
 <ul class="directions"><li><a href="https://www.policenationale.gouv.sn/" target="_blank" rel="noopener"><span class="sigle">DGPN<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></span><small>Police nationale</small><span class="sr">(site externe)</span></a></li><li><a href="https://www.dge.sn/" target="_blank" rel="noopener"><span class="sigle">DGE<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></span><small>Élections</small><span class="sr">(site externe)</span></a></li><li><a href="https://www.sapeurspompiers.gouv.sn/" target="_blank" rel="noopener"><span class="sigle">BNSP<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></span><small>Sapeurs-pompiers</small><span class="sr">(site externe)</span></a></li><li><a href="https://www.asp.gouv.sn/" target="_blank" rel="noopener"><span class="sigle">ASP<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></span><small>Sécurité de proximité</small><span class="sr">(site externe)</span></a></li><li><a href="ministere.html"><span class="sigle">DGAT</span><small>Administration territoriale</small></a></li><li><a href="ministere.html"><span class="sigle">DAF</span><small>Automatisation des Fichiers</small></a></li><li><a href="ministere.html"><span class="sigle">DPC</span><small>Protection civile</small></a></li><li><a href="https://www.cild.gouv.sn/" target="_blank" rel="noopener"><span class="sigle">CILD<span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></span></span><small>Lutte contre la drogue</small><span class="sr">(site externe)</span></a></li></ul>
 <a class="btn-contour" href="ministere.html">Voir l’annuaire<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
 </div></section>
+<section class="sec-aide" aria-labelledby="t-aide"><div class="wrap"><div class="aide-carte">
+<div><h2 id="t-aide">Vous ne trouvez pas ce que vous cherchez&nbsp;?</h2><p>Posez votre question à l’assistant ou écrivez aux services du Ministère.</p></div>
+<div class="boutons"><button class="plein" type="button" onclick="basculerAssistant(true)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Poser ma question</button><a class="contour" href="contact.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>Écrire au Ministère</a></div>
+</div></div></section>
 </main>
 <footer class="pied"><div class="wrap">
 <div class="colonnes">
-<div><div class="republique"><svg class="drapeau" width="33" height="22" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span><b>République du Sénégal</b><small>Un Peuple - Un But - Une Foi</small></span></div>
-<a class="logo-blanc" href="accueil.html"><img src="../assets/logo-misp-blanc.png" alt="Ministère de l’Intérieur et de la Sécurité publique, accueil" width="254" height="36"></a>
+<div><a class="logo-blanc" href="accueil.html"><img src="../assets/92150fb738576e449e87557f00f77528.png" alt="Ministère de l’Intérieur et de la Sécurité publique, accueil" width="254" height="36"></a>
 <p class="presentation">Sécurité, administration et gouvernance au service des citoyens sénégalais.</p></div>
-<div><h2>Urgences, 24 h/24</h2><ul class="urgences"><li><a href="tel:17"><span>Police secours</span><b>17</b></a></li><li><a href="tel:18"><span>Sapeurs-pompiers</span><b>18</b></a></li><li><a href="tel:123"><span>Gendarmerie nationale</span><b>123</b></a></li></ul></div>
+<div><h2>Urgences, 24 h/24</h2><ul class="urgences"><li><a href="tel:17"><span>Police secours</span><b>17</b></a></li><li><a href="tel:18"><span>Sapeurs-pompiers</span><b>18</b></a></li><li><a href="tel:800002020"><span>Gendarmerie nationale</span><b>800 00 20 20</b></a></li></ul></div>
 <div class="contacts"><h2>Nous joindre</h2><span>Place Washington, Dakar 4002</span><a href="tel:+221338899100">+221 33 889 91 00</a><a href="mailto:contact@interieur.gouv.sn">contact@interieur.gouv.sn</a><a href="contact.html" style="font-weight:700">Tous les contacts</a></div>
 <div><h2>Suivre le Ministère</h2><div class="reseaux"><a class="reseau" href="https://www.facebook.com/MinistereInterieurSenegal" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-1.6 19.9V14.9H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 12 2z" fill="currentColor"/></svg></a><a class="reseau" href="https://x.com/Min_Interieur" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a><a class="reseau" href="https://www.instagram.com/misp_sen/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg></a><a class="reseau" href="https://www.tiktok.com/@misp221" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.6 2.4 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a><a class="reseau" href="https://www.youtube.com/@misp_senegal" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><polygon points="10,8.8 15.5,12 10,15.2" fill="#fff"/></svg></a></div></div>
 </div>
@@ -522,7 +661,7 @@ function basculerAssistant(force){var o=force===true?true:!document.body.classLi
 window.addEventListener('message',function(e){if(e.data==='fermer-assistant')basculerAssistant(false);});
 (function(){var m=document.getElementById('mosaique');if(!m)return;var p=document.querySelectorAll('.points span');m.addEventListener('scroll',function(){var i=Math.round(m.scrollLeft/(m.children[0].offsetWidth+12));p.forEach(function(e,k){e.classList.toggle('on',k===i)});},{passive:true});})();
 (function(){var h=document.getElementById('entete');if(!h)return;var H=0,U=0,fixe=false;
-function mesurer(){var was=fixe;if(was)basculer(false);H=h.offsetHeight;var k=(innerWidth>=1024&&document.body.classList.contains('v2'))?h.querySelector('.nav'):h.querySelector('.marque');U=k?k.offsetTop:0;if(was)basculer(true);}
+function mesurer(){var was=fixe;if(was)basculer(false);H=h.offsetHeight;var k=h.querySelector('.marque');U=k?k.offsetTop:0;if(was)basculer(true);}
 function basculer(o){fixe=o;h.classList.toggle('fixe',o);h.style.top=o?(-U)+'px':'';document.body.style.paddingTop=o?H+'px':'';}
 function suivre(){var o=scrollY>H;if(o!==fixe)basculer(o);}
 mesurer();addEventListener('resize',function(){mesurer();suivre();});addEventListener('scroll',suivre,{passive:true});suivre();})();

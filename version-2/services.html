@@ -83,7 +83,7 @@ ul{list-style:none;padding:0}
 .hero .voile{position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,7,38,.88) 0%,rgba(11,7,38,.35) 55%,rgba(11,7,38,.2) 100%)}
 .hero .wrap{position:absolute;left:0;right:0;bottom:48px}
 .hero h1{margin-top:16px;font-size:40px;line-height:46px;font-weight:700;letter-spacing:-.8px;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.35)}
-.hero h1 span{color:var(--jaune)}
+.hero h1 span{color:#fff;font-weight:400}
 
 /* ───── à la une ───── */
 .meta{display:flex;align-items:center;gap:10px}
@@ -159,25 +159,25 @@ ul{list-style:none;padding:0}
 .sec-directions .btn-contour{margin-top:20px}
 
 /* ───── pied de page ───── */
-.pied{padding:40px 0 32px;background:var(--ink-deep);color:#fff}
+.pied{padding:40px 0 32px;background:#FAFBFC;color:var(--txt);border-top:1px solid #E6E9EE}
 .pied .colonnes{display:grid;gap:32px}
 .pied .republique{display:flex;align-items:center;gap:12px}
 .pied .republique b{display:block;font-size:14px;line-height:18px}
-.pied .republique small{font-size:12px;line-height:18px;color:rgba(255,255,255,.8)}
-.pied .logo-blanc{margin-top:16px;display:flex}
+.pied .republique small{font-size:12px;line-height:18px;color:var(--txt2)}
+.pied .logo-blanc{display:flex}
 .pied .logo-blanc img{width:211px;height:30px}
-.pied .presentation{margin-top:16px;font-size:14px;line-height:22px;color:rgba(255,255,255,.82)}
+.pied .presentation{margin-top:16px;font-size:14px;line-height:22px;color:var(--txt2)}
 .pied h2{margin-bottom:8px;font-size:16px;line-height:24px;font-weight:700}
-.pied .urgences li{border-top:1px solid rgba(255,255,255,.18)}
+.pied .urgences li{border-top:1px solid #DDE2E9}
 .pied .urgences a{min-height:52px;display:flex;align-items:center;justify-content:space-between;text-decoration:none}
-.pied .urgences b{font-size:24px}
+.pied .urgences b{font-size:24px;white-space:nowrap;color:var(--txt)}
 .pied .contacts{display:flex;flex-direction:column;font-size:15px}
 .pied .reseaux{display:flex;gap:10px}
-.pied .reseau{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:22px;background:rgba(255,255,255,.12);color:#fff}
-.pied .sites{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;font-size:14px}
-.pied .sites span{width:100%;color:rgba(255,255,255,.72)}
-.pied .legal{margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px}
-.pied .copy{margin-top:12px;font-size:12px;color:rgba(255,255,255,.72)}
+.pied .reseau{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:22px;background:#fff;color:var(--txt)}
+.pied .sites{margin-top:32px;padding-top:20px;border-top:1px solid #DDE2E9;display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;font-size:14px}
+.pied .sites span{width:100%;color:var(--txt2)}
+.pied .legal{margin-top:20px;padding-top:20px;border-top:1px solid #DDE2E9;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px}
+.pied .copy{margin-top:12px;font-size:12px;color:var(--txt2)}
 
 /* ───── assistant ───── */
 .fab{position:fixed;right:16px;bottom:20px;z-index:50;width:60px;height:60px;padding:0;display:flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:30px;background:var(--ink);color:#fff;font:inherit;font-size:16px;font-weight:700;box-shadow:0 8px 24px rgba(15,20,60,.32);cursor:pointer}
@@ -224,16 +224,16 @@ body.assistant-ouvert .fab{display:none}
   .barre .wrap{height:40px}
   .barre .drapeau,.barre .rep{display:none}
   .barre .suivre{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;color:#4A5261}
-  .barre .reseaux{display:flex;color:var(--bleu)}
-  .barre .reseau{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--bleu)}
+  .barre .reseaux{display:flex;color:var(--txt)}
+  .barre .reseau{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--txt)}
   .barre .reseau svg{width:17px;height:17px}
   .langue{font-size:13px}
   .marque .wrap{height:72px}
   .marque .gauche{display:flex;align-items:center;gap:20px}
   .marque .republique{display:flex;align-items:center;gap:12px;text-decoration:none}
   .marque .republique b{display:block;font-size:13px;line-height:18px;letter-spacing:.04em;color:var(--txt)}
-  .marque .republique small{display:flex;gap:5px;font-size:11px;line-height:18px;color:#4A5261}
-  .marque .republique small i{font-style:normal;color:#1C07A4}
+  .marque .republique small{display:flex;gap:5px;font-size:11px;line-height:18px;color:var(--txt)}
+  .marque .republique small i{font-style:normal;color:var(--txt)}
   .marque .sep{display:block;width:1px;height:34px;background:var(--bord)}
   .actions{display:none}
   .recherche-entete{display:flex}
@@ -363,6 +363,26 @@ body.assistant-ouvert .fab{display:none}
 @keyframes descente{from{transform:translateY(-100%)}}
 @media (prefers-reduced-motion:reduce){.entete.fixe{animation:none}}
 
+/* liens de section : sobres, flèche animée (modèle DSFR) */
+.tete .lien{display:inline-flex;align-items:center;gap:8px;font-weight:500;color:var(--ink);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:2px;white-space:nowrap;transition:background-size .2s}
+.tete .lien::after{content:"";width:16px;height:16px;flex:none;background:currentColor;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'/%3E%3Cpolyline points='12 5 19 12 12 19'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .2s}
+.tete .lien:hover{background-size:100% 2px}
+.tete .lien:hover::after{transform:translateX(3px)}
+@media (prefers-reduced-motion:reduce){.tete .lien::after{transition:none}}
+
+/* bloc d’aide commun avant le pied de page : carte grise dans une bande blanche */
+.sec-aide{padding:48px 0;background:#fff}
+.aide-carte{padding:28px 24px;display:flex;flex-direction:column;gap:20px;background:var(--gris);border-radius:12px}
+.aide-carte h2{font-size:22px;line-height:28px;font-weight:700;color:var(--txt)}
+.aide-carte p{margin-top:6px;font-size:16px;line-height:24px;color:var(--txt2)}
+.aide-carte .boutons{display:flex;flex-direction:column;gap:10px}
+.aide-carte .boutons a,.aide-carte .boutons button{height:48px;padding:0 22px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:24px;font:inherit;font-size:15px;font-weight:700;text-decoration:none;cursor:pointer}
+.aide-carte .plein{border:0;background:var(--ink);color:#fff}
+.aide-carte .contour{border:1px solid var(--ink);background:#fff;color:var(--ink)}
+.aide-carte .plein:hover{background:#15057D}.aide-carte .contour:hover{background:#F6F6F6}
+@media (min-width:768px){.aide-carte .boutons{flex-direction:row}}
+@media (min-width:1024px){.sec-aide{padding:72px 0}.aide-carte{padding:40px 48px;flex-direction:row;align-items:center;justify-content:space-between;gap:32px}.aide-carte h2{font-size:28px;line-height:36px}}
+
 /* champ de recherche des pages */
 .recherche-act .champ{height:48px;display:flex;align-items:center;gap:10px;padding:0 4px 0 14px;border:1px solid #9AA3B2;border-radius:6px;background:#fff}
 .recherche-act .champ>span{display:flex;color:var(--txt2)}
@@ -463,7 +483,7 @@ body.assistant-ouvert .fab{display:none}
 </div></div>
 <div class="marque"><div class="wrap">
 <div class="gauche">
-<a class="republique" href="accueil.html"><svg class="drapeau" width="27" height="18" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span><b>RÉPUBLIQUE DU SÉNÉGAL</b><small>Un Peuple <i>★</i> Un But <i>★</i> Une Foi</small></span></a>
+<a class="republique" href="accueil.html"><svg class="drapeau" width="36" height="24" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span><b>RÉPUBLIQUE DU SÉNÉGAL</b><small>Un Peuple <i>★</i> Un But <i>★</i> Une Foi</small></span></a>
 <span class="sep" aria-hidden="true"></span>
 <a class="logo" href="accueil.html"><img src="../assets/92150fb738576e449e87557f00f77528.png" alt="Ministère de l’Intérieur et de la Sécurité publique, accueil" width="211" height="30"></a>
 </div>
@@ -498,10 +518,6 @@ body.assistant-ouvert .fab{display:none}
 <div class="groupes" id="groupes"><section class="groupe" aria-labelledby="g0"><header class="g-tete"><span class="g-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.4 1.7-2 3-2s2.4.6 3 2M14 10h4M14 13h3"/></svg></span><h2 id="g0">Identité et voyage</h2><span class="g-nb">2</span></header><ul><li data-profils="Citoyen sénégalais"><a href="fiche-cni.html"><span class="txt"><b>Carte nationale d’identité biométrique</b><small>Pour tout citoyen sénégalais âgé d’au moins 5 ans. Valable 10 ans.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Citoyen sénégalais"><a href="#"><span class="txt"><b>Passeport ordinaire</b><small>Document de voyage délivré à tout citoyen sénégalais, dès la naissance.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul></section><section class="groupe" aria-labelledby="g1"><header class="g-tete"><span class="g-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h2 id="g1">Étrangers au Sénégal</h2><span class="g-nb">2</span></header><ul><li data-profils="Étranger au Sénégal"><a href="#"><span class="txt"><b>Carte d’identité d’étranger</b><small>Demande adressée au Ministre chargé de l’Intérieur, avec un passeport en cours de validité.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Étranger au Sénégal|Professionnel"><a href="#"><span class="txt"><b>Carte de circulation</b><small>Pour les étrangers établis au Sénégal qui voyagent souvent pour leur activité professionnelle.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul></section><section class="groupe" aria-labelledby="g2"><header class="g-tete"><span class="g-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="m9 14 2 2 4-4"/></svg></span><h2 id="g2">Attestations et certificats</h2><span class="g-nb">2</span></header><ul><li data-profils="Citoyen sénégalais|Étranger au Sénégal"><a href="#"><span class="txt"><b>Certificat de bonne vie et mœurs</b><small class="a-comp">Contenu de la fiche à compléter par le service compétent</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Citoyen sénégalais|Étranger au Sénégal"><a href="#"><span class="txt"><b>Certificat de déménagement</b><small>Délivré après vérification de la validité des pièces.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul></section><section class="groupe" aria-labelledby="g3"><header class="g-tete"><span class="g-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg></span><h2 id="g3">Associations, ONG et syndicats</h2><span class="g-nb">5</span></header><ul><li data-profils="Association ou ONG"><a href="#"><span class="txt"><b>Constitution d’une association d’envergure nationale ou à vocation religieuse</b><small>Dépôt à la sous-préfecture ou à la préfecture du ressort du siège social.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Association ou ONG"><a href="#"><span class="txt"><b>Constitution d’une association d’envergure régionale</b><small>Dépôt à la sous-préfecture ou à la préfecture du ressort du siège social.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Association ou ONG"><a href="#"><span class="txt"><b>Implantation d’une association étrangère</b><small>Dépôt au courrier commun du Ministère ou à la gouvernance, instruction par la DGAT.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Association ou ONG"><a href="#"><span class="txt"><b>Agrément d’ONG</b><small>Dépôt au courrier commun du Ministère, vérification du dossier par la DGAT.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Association ou ONG|Professionnel"><a href="#"><span class="txt"><b>Récépissé de syndicat</b><small>Déclaration du syndicat et délivrance du récépissé.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul></section><section class="groupe" aria-labelledby="g4"><header class="g-tete"><span class="g-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 20 6v6c0 5-3.4 8.4-8 9.5C7.4 20.4 4 17 4 12V6z"/><path d="m9 12 2 2 4-4"/></svg></span><h2 id="g4">Armes, sécurité et véhicules</h2><span class="g-nb">3</span></header><ul><li data-profils="Citoyen sénégalais|Étranger au Sénégal"><a href="#"><span class="txt"><b>Autorisation et permis de port d’arme</b><small>Pour toute personne âgée d’au moins 21 ans souhaitant acheter une arme ou des munitions.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Professionnel"><a href="#"><span class="txt"><b>Agrément sécurité incendie</b><small>Conditions et textes applicables à l’agrément préalable.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li><li data-profils="Citoyen sénégalais|Étranger au Sénégal|Professionnel"><a href="#"><span class="txt"><b>Attestation de vérification des véhicules importés</b><small>Contrôle qu’un véhicule importé n’est pas déclaré volé.</small></span><span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></span></a></li></ul></section></div>
 <p class="vide" id="vide" style="margin-bottom:48px">Aucun service ne correspond à votre recherche. Essayez un autre mot ou posez votre question à l’assistant.</p>
 </div>
-<section class="aide" aria-labelledby="t-aide"><div class="wrap">
-<div><h2 id="t-aide">Vous ne trouvez pas ce que vous cherchez&nbsp;?</h2><p>Posez votre question à l’assistant ou écrivez aux services du Ministère.</p></div>
-<div class="boutons"><button class="plein" type="button" onclick="basculerAssistant(true)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Poser ma question</button><a class="contour" href="contact.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>Écrire au Ministère</a></div>
-</div></section>
 <script>
 var profil='Tous';
 (function(){var q=new URLSearchParams(location.search).get('q');if(q){document.getElementById('q-dem').value=q;setTimeout(filtrer,0);}})();
@@ -529,13 +545,16 @@ function filtrer(){
   addEventListener('scroll',function(){fermer();},{passive:true});
 })();
 </script>
+<section class="sec-aide" aria-labelledby="t-aide"><div class="wrap"><div class="aide-carte">
+<div><h2 id="t-aide">Vous ne trouvez pas ce que vous cherchez&nbsp;?</h2><p>Posez votre question à l’assistant ou écrivez aux services du Ministère.</p></div>
+<div class="boutons"><button class="plein" type="button" onclick="basculerAssistant(true)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Poser ma question</button><a class="contour" href="contact.html"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 7 8.5-7"/></svg>Écrire au Ministère</a></div>
+</div></div></section>
 </main>
 <footer class="pied"><div class="wrap">
 <div class="colonnes">
-<div><div class="republique"><svg class="drapeau" width="33" height="22" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span><b>République du Sénégal</b><small>Un Peuple - Un But - Une Foi</small></span></div>
-<a class="logo-blanc" href="accueil.html"><img src="../assets/logo-misp-blanc.png" alt="Ministère de l’Intérieur et de la Sécurité publique, accueil" width="254" height="36"></a>
+<div><a class="logo-blanc" href="accueil.html"><img src="../assets/92150fb738576e449e87557f00f77528.png" alt="Ministère de l’Intérieur et de la Sécurité publique, accueil" width="254" height="36"></a>
 <p class="presentation">Sécurité, administration et gouvernance au service des citoyens sénégalais.</p></div>
-<div><h2>Urgences, 24 h/24</h2><ul class="urgences"><li><a href="tel:17"><span>Police secours</span><b>17</b></a></li><li><a href="tel:18"><span>Sapeurs-pompiers</span><b>18</b></a></li><li><a href="tel:123"><span>Gendarmerie nationale</span><b>123</b></a></li></ul></div>
+<div><h2>Urgences, 24 h/24</h2><ul class="urgences"><li><a href="tel:17"><span>Police secours</span><b>17</b></a></li><li><a href="tel:18"><span>Sapeurs-pompiers</span><b>18</b></a></li><li><a href="tel:800002020"><span>Gendarmerie nationale</span><b>800 00 20 20</b></a></li></ul></div>
 <div class="contacts"><h2>Nous joindre</h2><span>Place Washington, Dakar 4002</span><a href="tel:+221338899100">+221 33 889 91 00</a><a href="mailto:contact@interieur.gouv.sn">contact@interieur.gouv.sn</a><a href="contact.html" style="font-weight:700">Tous les contacts</a></div>
 <div><h2>Suivre le Ministère</h2><div class="reseaux"><a class="reseau" href="https://www.facebook.com/MinistereInterieurSenegal" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-1.6 19.9V14.9H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 12 2z" fill="currentColor"/></svg></a><a class="reseau" href="https://x.com/Min_Interieur" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a><a class="reseau" href="https://www.instagram.com/misp_sen/" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/></svg></a><a class="reseau" href="https://www.tiktok.com/@misp221" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.6 2.4 4.4 5 4.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a><a class="reseau" href="https://www.youtube.com/@misp_senegal" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor"/><polygon points="10,8.8 15.5,12 10,15.2" fill="#fff"/></svg></a></div></div>
 </div>
@@ -551,7 +570,7 @@ function basculerAssistant(force){var o=force===true?true:!document.body.classLi
 window.addEventListener('message',function(e){if(e.data==='fermer-assistant')basculerAssistant(false);});
 (function(){var m=document.getElementById('mosaique');if(!m)return;var p=document.querySelectorAll('.points span');m.addEventListener('scroll',function(){var i=Math.round(m.scrollLeft/(m.children[0].offsetWidth+12));p.forEach(function(e,k){e.classList.toggle('on',k===i)});},{passive:true});})();
 (function(){var h=document.getElementById('entete');if(!h)return;var H=0,U=0,fixe=false;
-function mesurer(){var was=fixe;if(was)basculer(false);H=h.offsetHeight;var k=(innerWidth>=1024&&document.body.classList.contains('v2'))?h.querySelector('.nav'):h.querySelector('.marque');U=k?k.offsetTop:0;if(was)basculer(true);}
+function mesurer(){var was=fixe;if(was)basculer(false);H=h.offsetHeight;var k=h.querySelector('.marque');U=k?k.offsetTop:0;if(was)basculer(true);}
 function basculer(o){fixe=o;h.classList.toggle('fixe',o);h.style.top=o?(-U)+'px':'';document.body.style.paddingTop=o?H+'px':'';}
 function suivre(){var o=scrollY>H;if(o!==fixe)basculer(o);}
 mesurer();addEventListener('resize',function(){mesurer();suivre();});addEventListener('scroll',suivre,{passive:true});suivre();})();
