@@ -11,7 +11,7 @@
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Bold.woff2) format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Regular_Italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
 :root{--ink:#1C07A4;--ink-soft:#F3F5F8;--ink-deep:#1C07A4;--bleu:#1C07A4;--bleu-f:#1C07A4;--gris:#F3F5F8;--txt:#161A22;--txt2:#4A5261;--txt3:#8C95A3;--bord:#DDE2E9;
-  --vert:#00853F;--jaune:#FDEF42;--rouge:#E31B23;--h-entete:117px;--marge:20px}
+  --vert:#00853F;--jaune:#FDEF42;--rouge:#E31B23;--h-entete:109px;--marge:20px}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;font-family:Marianne,arial,sans-serif;font-size:16px;line-height:24px;color:#2B2F36;background:#fff}
@@ -212,7 +212,7 @@ body.assistant-ouvert .fab{display:none}
 
 /* ═════ ordinateur ≥ 1024 px ═════ */
 @media (min-width:1024px){
-  :root{--marge:24px;--h-entete:179px}
+  :root{--marge:24px;--h-entete:169px}
   body.assistant-ouvert{overflow:auto}
   .sec{padding:72px 0}
   .tete{margin-bottom:32px}
@@ -336,7 +336,7 @@ body.assistant-ouvert .fab{display:none}
 /* ═════ version 1 : en-tête façon V1 (ordinateur) ═════ */
 .devise-v1,.reseaux-v1,.pastilles,.services{display:none}
 @media (min-width:1024px){
-  .v1{--h-entete:131px}
+  .v1{--h-entete:121px}
   .v1 .barre{background:var(--bleu);color:#fff}
   .v1 .barre .wrap{height:48px;gap:14px}
   .v1 .barre .drapeau{display:block;width:26px;height:17px}
@@ -478,7 +478,6 @@ body.assistant-ouvert .fab{display:none}
 <body class="v2">
 <header class="entete" id="entete">
 <a class="sr" href="#contenu">Aller au contenu</a>
-<div class="bande" aria-hidden="true"><span></span><span><svg viewBox="0 0 24 24"><polygon points="12,1 14.9,8.9 23.4,9.2 16.7,14.4 19.1,22.6 12,17.8 4.9,22.6 7.3,14.4 0.6,9.2 9.1,8.9" fill="#00853F"/></svg></span><span></span></div>
 <div class="barre"><div class="wrap">
 <svg class="drapeau" width="24" height="16" viewBox="0 0 30 20" aria-hidden="true"><rect width="10" height="20" fill="#00853F"/><rect x="10" width="10" height="20" fill="#FDEF42"/><rect x="20" width="10" height="20" fill="#E31B23"/><polygon points="15,6.6 15.95,9.3 18.8,9.35 16.54,11.08 17.35,13.8 15,12.2 12.65,13.8 13.46,11.08 11.2,9.35 14.05,9.3" fill="#00853F"/></svg><span class="rep">RÉPUBLIQUE DU SÉNÉGAL</span>
 <span class="devise-v1"><span class="sep-v1" aria-hidden="true"></span>Un Peuple <i>★</i> Un But <i>★</i> Une Foi</span>
