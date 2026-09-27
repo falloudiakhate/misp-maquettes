@@ -17,20 +17,20 @@ html,body{height:100%;margin:0;overflow:hidden;overscroll-behavior:none}
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Light.woff2) format('woff2');font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Regular.woff2) format('woff2');font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Medium.woff2) format('woff2');font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Bold.woff2) format('woff2');font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Regular_Italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Bold_Italic.woff2) format('woff2');font-weight:700;font-style:italic;font-display:swap}
 
 body{margin:0;background:#FFFFFF}
-a{color:#1C07A4}a:hover{color:#140573}
+a{color:#1C07A4}a:hover{color:#1C07A4}
 </style>
 </helmet>
-<div style="position: relative; width: 100%; height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; background: #FFFFFF; font-family: Marianne, arial, sans-serif; color: #2B3631">
+<div style="position: relative; width: 100%; height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; overflow: hidden; background: #FFFFFF; font-family: Marianne, arial, sans-serif; color: #2B2F36">
 
 
-<header style="flex-shrink: 0; height: 68px; box-sizing: border-box; padding: 0 6px 0 16px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #D6DFDA">
+<header style="flex-shrink: 0; height: 68px; box-sizing: border-box; padding: 0 6px 0 16px; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #DDE2E9">
 <span aria-hidden="true" style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 18px; background: {{ink}}; color: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V10l7-5 7 5v11"></path><line x1="9.5" y1="13" x2="9.5" y2="18"></line><line x1="14.5" y1="13" x2="14.5" y2="18"></line></svg></span>
 <div style="flex-grow: 1; min-width: 0; display: flex; flex-direction: column">
-<h1 style="margin: 0; font-size: 16px; line-height: 20px; font-weight: 700; color: #17211C">Assistant du Ministère</h1>
-<p style="margin: 0; font-size: 12px; line-height: 20px; color: #4B5A53">Réponses tirées des pages officielles</p>
+<h1 style="margin: 0; font-size: 16px; line-height: 20px; font-weight: 700; color: #161A22">Assistant du Ministère</h1>
+<p style="margin: 0; font-size: 12px; line-height: 20px; color: #4A5261">Réponses tirées des pages officielles</p>
 </div>
-<button type="button" onClick="{{onReset}}" aria-label="Nouvelle conversation" style="flex-shrink: 0; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 22px; background: transparent; color: #17211C; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"></path><polyline points="20 4 20 11 13 11"></polyline></svg></button>
-<button type="button" onClick="{{onClose}}" aria-label="Fermer l’assistant" style="flex-shrink: 0; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 22px; background: #EDF1F7; color: #17211C; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg></button>
+<button type="button" onClick="{{onReset}}" aria-label="Nouvelle conversation" style="flex-shrink: 0; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 22px; background: transparent; color: #161A22; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2.3 5.7"></path><polyline points="20 4 20 11 13 11"></polyline></svg></button>
+<button type="button" onClick="{{onClose}}" aria-label="Fermer l’assistant" style="flex-shrink: 0; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 22px; background: #F3F5F8; color: #161A22; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></svg></button>
 </header>
 
 
@@ -40,7 +40,7 @@ a{color:#1C07A4}a:hover{color:#140573}
 <div style="display: flex; align-items: flex-start; gap: 8px">
 <span aria-hidden="true" style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 14px; background: {{inkSoft}}; color: {{ink}}; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V10l7-5 7 5v11"></path></svg></span>
 <div style="min-width: 0; max-width: 306px; display: flex; flex-direction: column; gap: 8px">
-<div style="box-sizing: border-box; padding: 12px 14px; border-radius: 4px 16px 16px 16px; background: {{m.bubbleBg}}; border: 1px solid {{m.bubbleBorder}}; font-size: 14px; line-height: 24px; color: #17211C">
+<div style="box-sizing: border-box; padding: 12px 14px; border-radius: 4px 16px 16px 16px; background: {{m.bubbleBg}}; border: 1px solid {{m.bubbleBorder}}; font-size: 14px; line-height: 24px; color: #161A22">
 <p style="margin: 0">{{m.text}}</p>
 <sc-if value="{{m.hasItems}}" hint-placeholder-val="{{ false }}">
 <ul style="margin: 8px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px">
@@ -53,13 +53,13 @@ a{color:#1C07A4}a:hover{color:#140573}
 <p style="margin: 8px 0 0">{{m.after}}</p>
 </sc-if>
 <sc-if value="{{m.hasSource}}" hint-placeholder-val="{{ false }}">
-<p style="margin: 10px 0 0; padding-top: 8px; border-top: 1px solid #D6DFDA; font-size: 12px; line-height: 20px; color: #4B5A53">Source : <a href="{{m.href}}" target="_top" style="font-weight: 700; color: {{ink}}">{{m.source}}</a></p>
+<p style="margin: 10px 0 0; padding-top: 8px; border-top: 1px solid #DDE2E9; font-size: 12px; line-height: 20px; color: #4A5261">Source : <a href="{{m.href}}" target="_top" style="font-weight: 700; color: {{ink}}">{{m.source}}</a></p>
 </sc-if>
 </div>
 <sc-if value="{{m.hasCalls}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; flex-wrap: wrap; gap: 8px">
 <sc-for list="{{m.calls}}" as="c" hint-placeholder-count="2">
-<a href="{{c.tel}}" style="height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; border-radius: 6px; background: #9E1219; color: #FFFFFF; font-size: 14px; font-weight: 700; text-decoration: none">{{c.label}}</a>
+<a href="{{c.tel}}" style="height: 44px; box-sizing: border-box; padding: 0 16px; display: flex; align-items: center; border-radius: 6px; background: #1C07A4; color: #FFFFFF; font-size: 14px; font-weight: 700; text-decoration: none">{{c.label}}</a>
 </sc-for>
 </div>
 </sc-if>
@@ -78,15 +78,15 @@ a{color:#1C07A4}a:hover{color:#140573}
 </div>
 </sc-if>
 <sc-if value="{{m.fbPending}}" hint-placeholder-val="{{ false }}">
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 14px; line-height: 24px; color: #4B5A53">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 14px; line-height: 24px; color: #4A5261">
 <span>Cette réponse vous aide-t-elle&nbsp;?</span>
-<button type="button" onClick="{{m.fbYes}}" style="min-width: 52px; height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #9AAAA2; border-radius: 6px; background: #FFFFFF; color: #17211C; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Oui</button>
-<button type="button" onClick="{{m.fbNo}}" style="min-width: 52px; height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #9AAAA2; border-radius: 6px; background: #FFFFFF; color: #17211C; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Non</button>
+<button type="button" onClick="{{m.fbYes}}" style="min-width: 52px; height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #9AA3B2; border-radius: 6px; background: #FFFFFF; color: #161A22; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Oui</button>
+<button type="button" onClick="{{m.fbNo}}" style="min-width: 52px; height: 44px; box-sizing: border-box; padding: 0 12px; border: 1px solid #9AA3B2; border-radius: 6px; background: #FFFFFF; color: #161A22; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer">Non</button>
 <button type="button" onClick="{{m.toAgent}}" style="height: 44px; box-sizing: border-box; padding: 0 4px; border: 0; background: transparent; color: {{ink}}; font-family: inherit; font-size: 14px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer">Écrire à un agent</button>
 </div>
 </sc-if>
 <sc-if value="{{m.fbDone}}" hint-placeholder-val="{{ false }}">
-<p style="margin: 0; font-size: 14px; line-height: 24px; color: #4B5A53">{{m.fbText}}</p>
+<p style="margin: 0; font-size: 14px; line-height: 24px; color: #4A5261">{{m.fbText}}</p>
 </sc-if>
 </div>
 </div>
@@ -100,18 +100,18 @@ a{color:#1C07A4}a:hover{color:#140573}
 <sc-if value="{{typing}}" hint-placeholder-val="{{ false }}">
 <div style="display: flex; align-items: center; gap: 8px">
 <span aria-hidden="true" style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 14px; background: {{inkSoft}}"></span>
-<p style="margin: 0; box-sizing: border-box; padding: 10px 14px; border-radius: 4px 16px 16px 16px; background: #F3F6F4; font-size: 14px; line-height: 24px; font-style: italic; color: #4B5A53">Recherche dans les pages officielles…</p>
+<p style="margin: 0; box-sizing: border-box; padding: 10px 14px; border-radius: 4px 16px 16px 16px; background: #F3F5F8; font-size: 14px; line-height: 24px; font-style: italic; color: #4A5261">Recherche dans les pages officielles…</p>
 </div>
 </sc-if>
 </div>
 
-<div style="flex-shrink: 0; box-sizing: border-box; padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #D6DFDA; background: #FFFFFF">
+<div style="flex-shrink: 0; box-sizing: border-box; padding: 10px 12px 14px; display: flex; flex-direction: column; gap: 6px; border-top: 1px solid #DDE2E9; background: #FFFFFF">
 <div style="display: flex; gap: 8px">
 <label for="question" style="position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap">Votre question</label>
-<input id="question" type="text" value="{{draft}}" onChange="{{onType}}" onKeyDown="{{onKey}}" placeholder="Écrivez votre question" autocomplete="off" style="flex-grow: 1; min-width: 0; height: 48px; box-sizing: border-box; padding: 0 16px; border: 1px solid #7E8F87; border-radius: 24px; background: #FFFFFF; font-family: inherit; font-size: 16px; color: #17211C">
+<input id="question" type="text" value="{{draft}}" onChange="{{onType}}" onKeyDown="{{onKey}}" placeholder="Écrivez votre question" autocomplete="off" style="flex-grow: 1; min-width: 0; height: 48px; box-sizing: border-box; padding: 0 16px; border: 1px solid #8C95A3; border-radius: 24px; background: #FFFFFF; font-family: inherit; font-size: 16px; color: #161A22">
 <button type="button" onClick="{{onSend}}" aria-label="Envoyer" style="flex-shrink: 0; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 24px; background: {{ink}}; color: #FFFFFF; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12l16-8-6 16-2.5-6.5z"></path></svg></button>
 </div>
-<p style="margin: 0; display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 11px; line-height: 16px; color: #8A958F"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="11" x2="12" y2="16"></line><line x1="12" y1="7.5" x2="12" y2="7.6"></line></svg>Réponses indicatives, à vérifier sur la page source.</p>
+<p style="margin: 0; display: flex; align-items: center; justify-content: center; gap: 5px; font-size: 11px; line-height: 16px; color: #8C95A3"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true" style="flex: none"><circle cx="12" cy="12" r="9"></circle><line x1="12" y1="11" x2="12" y2="16"></line><line x1="12" y1="7.5" x2="12" y2="7.6"></line></svg>Réponses indicatives, à vérifier sur la page source.</p>
 </div>
 
 </div>
@@ -257,8 +257,8 @@ class Component extends DCLogic {
         actions: (c.actions || []).map((p) => ({ label: p[0], href: p[1] })),
         hasCalls: !!c.calls,
         calls: (c.calls || []).map((p) => ({ label: p[0], tel: p[1] })),
-        bubbleBg: c.urgent ? '#FDECEC' : '#F3F6F4',
-        bubbleBorder: c.urgent ? '#F0B9BC' : '#E1E8E4',
+        bubbleBg: c.urgent ? '#F3F5F8' : '#F3F5F8',
+        bubbleBorder: c.urgent ? '#DDE2E9' : '#E1E8E4',
         fbPending: isAnswer && !fb,
         fbDone: isAnswer && !!fb,
         fbText: fb === 'oui' ? 'Merci pour votre retour.' : 'Merci. Vous pouvez aussi écrire aux services du Ministère.',

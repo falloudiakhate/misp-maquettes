@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Carte nationale d’identité biométrique · Ministère de l’Intérieur et de la Sécurité publique</title>
-<meta name="theme-color" content="#37538C">
+<meta name="theme-color" content="#1C07A4">
 <style>
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Regular.woff2) format('woff2');font-weight:400;font-display:swap}
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Medium.woff2) format('woff2');font-weight:500;font-display:swap}
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Bold.woff2) format('woff2');font-weight:700;font-display:swap}
 @font-face{font-family:Marianne;src:url(https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.12.1/dist/fonts/Marianne-Regular_Italic.woff2) format('woff2');font-weight:400;font-style:italic;font-display:swap}
-:root{--ink:#1C07A4;--ink-soft:#E8E6F6;--ink-deep:#140573;--bleu:#37538C;--bleu-f:#1B2A5E;--gris:#EDF1F7;--txt:#17211C;--txt2:#4B5A53;--txt3:#8A958F;--bord:#D6DFDA;
+:root{--ink:#1C07A4;--ink-soft:#F3F5F8;--ink-deep:#1C07A4;--bleu:#1C07A4;--bleu-f:#1C07A4;--gris:#F3F5F8;--txt:#161A22;--txt2:#4A5261;--txt3:#8C95A3;--bord:#DDE2E9;
   --vert:#00853F;--jaune:#FDEF42;--rouge:#E31B23;--h-entete:117px;--marge:20px}
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;font-family:Marianne,arial,sans-serif;font-size:16px;line-height:24px;color:#2B3631;background:#fff}
+body{margin:0;font-family:Marianne,arial,sans-serif;font-size:16px;line-height:24px;color:#2B2F36;background:#fff}
 img{display:block;max-width:100%}
 a{color:inherit}
 h1,h2,h3,p,ul,figure,blockquote{margin:0}
@@ -58,7 +58,7 @@ ul{list-style:none;padding:0}
 .nav{display:none}
 .entete.ouvert .nav{display:block;border-top:1px solid var(--bord);background:#fff;max-height:calc(100svh - 108px);overflow:auto}
 .nav ul{display:flex;flex-direction:column;padding:8px 0}
-.nav a{min-height:52px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #EEF1F4;font-size:17px;font-weight:500;color:var(--txt);text-decoration:none}
+.nav a{min-height:52px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #F3F5F8;font-size:17px;font-weight:500;color:var(--txt);text-decoration:none}
 .nav a[aria-current="page"]{color:var(--bleu);font-weight:700}
 .nav .mobile-seul{padding:16px 0 24px}
 .nav .mobile-seul .reseaux{display:flex;gap:8px;margin-top:16px}
@@ -87,8 +87,8 @@ ul{list-style:none;padding:0}
 
 /* ───── à la une ───── */
 .meta{display:flex;align-items:center;gap:10px}
-.etq{height:24px;padding:0 8px;display:flex;align-items:center;border-radius:4px;background:#E9EEEC;color:#2B3631;font-size:12px;font-weight:700}
-.etq-or{background:#FFF4C2}
+.etq{height:24px;padding:0 8px;display:flex;align-items:center;border-radius:4px;background:#F3F5F8;color:#2B2F36;font-size:12px;font-weight:700}
+.etq-or{background:#F3F5F8}
 .meta time{font-size:12px;color:var(--txt2)}
 .une-grille{display:grid;gap:24px}
 .une-principale a{display:flex;flex-direction:column;gap:12px;text-decoration:none}
@@ -233,7 +233,7 @@ body.assistant-ouvert .fab{display:none}
   .marque .republique{display:flex;align-items:center;gap:12px;text-decoration:none}
   .marque .republique b{display:block;font-size:13px;line-height:18px;letter-spacing:.04em;color:var(--txt)}
   .marque .republique small{display:flex;gap:5px;font-size:11px;line-height:18px;color:#4A5261}
-  .marque .republique small i{font-style:normal;color:#C9A400}
+  .marque .republique small i{font-style:normal;color:#1C07A4}
   .marque .sep{display:block;width:1px;height:34px;background:var(--bord)}
   .actions{display:none}
   .recherche-entete{display:flex}
@@ -368,8 +368,8 @@ body.assistant-ouvert .fab{display:none}
 .tete-simple h1{margin-top:20px;font-size:30px;line-height:38px;font-weight:700;color:var(--txt)}
 .tete-simple .intro{margin-top:8px;font-size:17px;line-height:28px;color:var(--txt2);max-width:760px}
 .tete-simple .maj{margin-top:10px;font-size:13px;color:var(--txt3)}
-.ariane{font-size:14px;line-height:22px;color:var(--txt2)}.ariane a{color:#2B3631}.ariane span{margin:0 6px}
-.alerte{margin-top:20px;padding:14px 16px;display:flex;gap:12px;border-radius:12px;background:var(--ink-soft);border-left:4px solid var(--ink);font-size:15px;line-height:24px;color:#2B3631}
+.ariane{font-size:14px;line-height:22px;color:var(--txt2)}.ariane a{color:#2B2F36}.ariane span{margin:0 6px}
+.alerte{margin-top:20px;padding:14px 16px;display:flex;gap:12px;border-radius:12px;background:var(--ink-soft);border-left:4px solid var(--ink);font-size:15px;line-height:24px;color:#2B2F36}
 .alerte svg{flex:none;color:var(--ink);margin-top:2px}
 .alerte a{font-weight:700;color:var(--ink)}
 .f-grille{padding:28px 0 56px;display:grid;gap:32px}
@@ -386,23 +386,23 @@ body.assistant-ouvert .fab{display:none}
 .etapes>li{position:relative;padding:18px 18px 18px 64px;border:1px solid #E1E6EA;border-radius:14px;counter-increment:e}
 .etapes>li::before{content:counter(e);position:absolute;left:18px;top:18px;width:32px;height:32px;border-radius:16px;background:var(--bleu);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
 .etapes h3{margin-bottom:8px;font-size:18px;line-height:26px;font-weight:700;color:var(--txt)}
-.etapes p,.etapes li li{font-size:16px;line-height:26px;color:#2B3631;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.etapes p,.etapes li li{font-size:16px;line-height:26px;color:#2B2F36;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 .etapes p+p{margin-top:8px}
 .etapes ul{padding-left:20px;list-style:disc;display:flex;flex-direction:column;gap:4px}
-.perte{padding:22px;border-radius:14px;background:#FFF7DB;border:1px solid #F1DE95}
-.perte p{font-size:16px;line-height:26px;color:#2B3631}
-.perte ul{margin-top:10px;padding-left:20px;list-style:disc;display:flex;flex-direction:column;gap:4px;font-size:16px;color:#2B3631}
-.rens p{font-size:16px;line-height:26px;color:#2B3631}
+.perte{padding:22px;border-radius:14px;background:#F3F5F8;border:1px solid #DDE2E9}
+.perte p{font-size:16px;line-height:26px;color:#2B2F36}
+.perte ul{margin-top:10px;padding-left:20px;list-style:disc;display:flex;flex-direction:column;gap:4px;font-size:16px;color:#2B2F36}
+.rens p{font-size:16px;line-height:26px;color:#2B2F36}
 .rens a{display:inline-flex;align-items:center;gap:8px;margin-top:8px;height:44px;padding:0 16px;border:1px solid var(--ink);border-radius:22px;font-weight:700;color:var(--ink);text-decoration:none}
 .utile{padding:18px;display:flex;flex-wrap:wrap;align-items:center;gap:12px;border-radius:14px;background:var(--gris)}
 .utile span{flex:1;min-width:200px;font-weight:700;color:var(--txt)}
-.utile button{height:40px;padding:0 18px;border:1px solid #9AAAA2;border-radius:20px;background:#fff;font:inherit;font-weight:700;cursor:pointer}
+.utile button{height:40px;padding:0 18px;border:1px solid #9AA3B2;border-radius:20px;background:#fff;font:inherit;font-weight:700;cursor:pointer}
 .f-lat{display:flex;flex-direction:column;gap:16px}
 .f-bloc{padding:20px;border:1px solid #E1E6EA;border-radius:14px;background:#fff}
 .f-bloc h2{margin-bottom:10px;font-size:16px;line-height:24px;font-weight:700;color:var(--txt)}
 .f-bloc li+li{margin-top:6px}
 .f-bloc a{color:var(--ink)}
-.f-bloc.assist{background:var(--ink-soft);border-color:#DAD6F1}
+.f-bloc.assist{background:var(--ink-soft);border-color:#DDE2E9}
 .f-bloc.assist p{font-size:14px;line-height:22px;color:var(--txt2)}
 .f-bloc.assist button{margin-top:12px;height:44px;padding:0 18px;display:inline-flex;align-items:center;gap:8px;border:0;border-radius:22px;background:var(--ink);color:#fff;font:inherit;font-weight:700;cursor:pointer}
 .sommaire-f{display:none}
